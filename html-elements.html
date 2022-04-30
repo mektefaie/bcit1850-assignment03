@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+COMP 1850:  Assignment 03
+author:		Mahmoud Ektefaie	
+date:		01/05/2022
+student#:	A00613971
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Review by Top Web Development Company | EK Dev</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE Font Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6.0 Icons -->
+    <script src="https://kit.fontawesome.com/5e53e4a255.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo" src="images/EKdev-logo.png" alt="ek dev logo">
+            <nav>
+                <ul>
+                    <li><a class="active nav-link" href="#">HTML Elements</a></li>
+                    <li><a class="nav-link" href="css-properties.html">CSS Properties</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h1>HTML5 Basic Tags</h1>
+                <figure>
+                    <img class="intro-img" src="images/basic-html-tags.jpg" alt="Basic HTML element tags">
+                    <figcaption>HTML5 is a markup language used for structuring and presenting content on the World Wide
+                        Web. It is the fifth and final major HTML version that is a World Wide Web Consortium
+                        recommendation.</figcaption>
+                </figure>
+            </section>
+
+            <hr class="html-hr">
+
+            <section>
+                <h2><span class="html-tag">&lt;code&gt;: Code</span></h2>
+                <h3>Definition:</h3>
+                <p>The <code>&lt;code&gt;</code> tag is used to define a piece of computer code. The content inside
+                    is displayed in the browser's default monospace font. Richer effects can be achieved by using
+                    CSS.</p>
+                <h3>Attributes:</h3>
+                <p>The <code>&lt;code&gt;</code> tag supports the <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                        title="Global Attributes on MDN Web Docs" target="_blank">global attributes</a> in HTML.</p>
+                <table>
+                    <tr>
+                        <th>Usage</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>&lt;<span class="usage">p</span>&gt;Displaying a &lt;<span
+                                    class="usage">code</span>&gt;sample code&lt;/<span class="usage">code</span>&gt;
+                                using the inline code element in HTML.&lt;/<span class="usage">p</span>&gt;</p>
+                        </td>
+                        <td>
+                            <p>Displaying a <code>sample code</code> using the inline code element in HTML.</p>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>The Inline Code element on: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/code" target="_blank"
+                            title="Code Element on MDN Web Docs">MDN</a>.</li>
+                    <li>
+                        HTML &lt;code&gt; Tag on: <a href="https://www.w3schools.com/tags/tag_code.asp" target="_blank"
+                            title="Code Tag on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+
+            <hr class="html-hr">
+
+            <section>
+                <h2><span class="html-tag">&lt;abbr&gt;: Abbreviation</span></h2>
+                <h3>Definition:</h3>
+                <p>The Abbreviation <code>&lt;abbr&gt;</code> HTML element represents an abbreviation or acronym,
+                    like &quot;HTML&quot;, &quot;CSS&quot;, &quot;JS.&quot;</p>
+                <h3>Attribute:</h3>
+                <p><span class="attribute">title</span><br>the title attribute has a specific
+                    semantic meaning when used with the <code>&lt;abbr&gt;</code> element; it must contain a full
+                    human-readable description or expansion of the abbreviation. This text is often presented by
+                    browsers as a tooltip when the mouse cursor is hovered over the element.</p>
+                <table>
+                    <tr>
+                        <th>Usage</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                &lt;<span class="usage">p</span>&gt;&lt;<span class="usage">abbr</span>
+                                <span class="attribute">title</span>="HyperText Markup Language"&gt;HTML&lt;/<span
+                                    class="usage">abbr</span>&gt; is the language of structure and semantics.&lt;/<span
+                                    class="usage">p</span>&gt;</p>
+                        </td>
+                        <td>
+                            <p><abbr title="HyperText Markup Language">HTML</abbr> is the language of structure and
+                                semantics.</p>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>The Abbreviation element on: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/abbr" target="_blank"
+                            title="Abbreviation Element on MDN Web Docs">MDN</a>.</li>
+                    <li>HTML &lt;abbr&gt; Tag on: <a href="https://www.w3schools.com/tags/tag_abbr.asp" target="_blank"
+                            title="Abbreviation Tag on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+
+            <hr class="html-hr">
+
+            <section>
+                <h2><span class="html-tag">&lt;hr&gt;: Horizontal Rule (Thematic Break)</span></h2>
+                <h3>Definition:</h3>
+                <p>The <code>&lt;hr&gt;</code> tag defines a thematic break in an HTML page (e.g. a shift of topic).
+                    The <code>&lt;hr&gt;</code> element is most often displayed as a horizontal rule that is used to
+                    separate content (or define a change) in an HTML page.</p>
+                <h3>Attributes:</h3>
+                <p>This element's attributes include the <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                        title="Global Attributes on MDN Web Docs" target="_blank">global attributes</a>.</p>
+                <table>
+                    <tr>
+                        <th>Usage</th>
+                        <th>Output</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>&lt;<span class="usage">p</span>&gt;HTML: language of semantics and structure.&lt;/<span
+                                    class="usage">p</span>&gt;
+                                <br>
+                                &lt;<span class="usage">hr</span>&gt;
+                                <br>
+                                &lt;<span class="usage">p</span>&gt;CSS: language of styles and presentation.&lt;/<span
+                                    class="usage">p</span>&gt;
+                                <br>
+                                &lt;<span class="usage">hr</span>&gt;
+                                <br>
+                                &lt;<span class="usage">p</span>&gt;JavaScript: language of behaviours and
+                                functionality.&lt;/<span class="usage">p</span>&gt;</p>
+                        </td>
+                        <td>
+                            <p>HTML: language of semantics and structure.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>CSS: language of styles and presentation.</p>
+                            <br>
+                            <hr>
+                            <br>
+                            <p>JavaScript: language of behaviours and functionality.</p>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>The Horizontal Rule element on: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/hr" target="_blank"
+                            title="Horizontal Rule on MDN Web Docs">MDN</a>.</li>
+                    <li>HTML &lt;hr&gt; Tag on: <a href="https://www.w3schools.com/tags/tag_hr.asp" target="_blank"
+                            title="Horizontal Rule Tag on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+            <br>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-credit">
+                <!-- using inline CSS styling - assignment03 -->
+                <p style="text-align: center;">&copy; 2022 Mahmoud Ektefaie | COMP1850
+                    <span class="social-icons">
+                        <a href="https://www.facebook.com/ektefaie" target="_blank"
+                            title="Mahmoud Ektefaie's Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/mahmoud13059754" target="_blank"
+                            title="Mahmoud Ektefaie's Twitter Page"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mahmoud-ektefaie-21755870/" target="_blank"
+                            title="Mahmoud Ektefaie's LinkedIn Page"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mektefaie" target="_blank" title="Mahmoud Ektefaie's GitHub Page"><i
+                                class="fa-brands fa-github"></i></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
