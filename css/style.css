@@ -116,13 +116,9 @@ td:last-child {
   margin: auto;
 }
 
-.html-tag {
-  background-color: #ff8250;
-  padding: 0.2em 0.6em;
-}
-
+.html-tag,
 .css-prop {
-  background-color: #faaf3b;
+  background-color: #f8a440;
   padding: 0.2em 0.6em;
 }
 
@@ -135,14 +131,7 @@ td:last-child {
   border-left-style: none;
   border-bottom-style: dotted;
   border-width: 5px;
-}
-
-.html-hr {
-  color: #ff8250;
-}
-
-.css-hr {
-  color: #faaf3b;
+  color: #f8a440;
 }
 
 .attribute,
@@ -220,6 +209,11 @@ figcaption {
 .intro {
   width: 75%;
   margin: auto;
+}
+
+.back-to-top {
+  display: block;
+  margin-left: auto;
 }
 
 .result {
