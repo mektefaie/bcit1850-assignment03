@@ -1,15 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+COMP 1850:  Assignment 03
+author: Mahmoud Ektefaie	
+date:   01/05/2022
+-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Properties | Mahmoud Ektefaie</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CSS Properties Review by Top Web Development Company | EK Dev</title>
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE Font Import-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6.0 Icons -->
+    <script src="https://kit.fontawesome.com/5e53e4a255.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+    <header>
+        <div class="container">
+            <img class="logo" src="images/EKdev-logo.png" alt="ek dev logo">
+            <nav>
+                <ul>
+                    <li><a class="nav-link" href="index.html">HTML Elements</a></li>
+                    <li><a class="active nav-link" href="#">CSS Properties</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="intro">
+                <h1>CSS3 Properties</h1>
+                <figure>
+                    <img class="intro-img" src="images/css-properties.jpg" alt="CSS Properties">
+                    <figcaption>CSS3 is the latest version of the CSS specification. CSS3 adds several new styling
+                        features and improvements to enhance the web presentation capabilities.</figcaption>
+                </figure>
+            </section>
+
+            <hr class="css-hr">
+
+            <section>
+                <h2><span class="css-prop">object-fit</span></h2>
+                <p>The <code>object-fit</code> CSS property sets how the content of a <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element" target="_blank"
+                        title="Replaced Elements on MDN Web Docs">replaced element</a>, such as an
+                    <code>&lt;img&gt;</code> or <code>&lt;video&gt;</code>, should be resized to fit its container. This
+                    property tells the content to fill the container in a variety of ways; such as "preserve that aspect
+                    ratio" or "stretch up and take up as much space as possible".</p>
+                <h3>CSS Syntax:</h3>
+                <p><code>object-fit: fill|contain|cover|scale-down|none;</code></p>
+                <h3>Property Values:</h3>
+                <p class="left-indent"><span class="values">fill</span><br>The replaced content is sized to fill the
+                    element's content box. The entire object will completely fill the box. If the object's aspect ratio
+                    does not match the aspect ratio of its box, then the object will be stretched to fit.</p>
+                <p class="left-indent"><span class="values">contain</span><br>The replaced content is scaled to maintain
+                    its aspect ratio while fitting within the element's content box. The entire object is made to fill
+                    the box, while preserving its aspect ratio, so the object will be <a
+                        href="https://en.wikipedia.org/wiki/Letterboxing_(filming)" target="_blank"
+                        title="letterboxing on Wikipedia">"letterboxed"</a> if its aspect ratio does not match the
+                    aspect ratio of the box.</p>
+                <p class="left-indent"><span class="values">cover</span><br>The replaced content is sized to maintain
+                    its aspect ratio while filling the element's entire content box. If the object's aspect ratio does
+                    not match the aspect ratio of its box, then the object will be clipped to fit.</p>
+                <p class="left-indent"><span class="values">scale-down</span><br>The content is sized as if
+                    <code>none</code> or <code>contain</code> were specified, whichever would result in a smaller
+                    concrete object size.</p>
+                <p class="left-indent"><span class="values">none</span><br>The replaced content is not resized.</p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Syntax</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>HTML</b></p>
+                            <p class="left-indent">
+                                &lt;<span class="usage">p</span>&gt;&lt;<span class="usage">b</span>&gt;object-fit:
+                                contain&lt;/<span class="usage">b</span>&gt;&lt;/<span class="usage">p</span>&gt;<br>
+                                &lt;<span class="usage">img</span> class="<span class="values">contain</span>"
+                                src="mdn_logo_only_color.png" alt="MDN Logo"&gt; <br>
+                                &lt;<span class="usage">img</span> class="<span class="values">contain</span> narrow"
+                                src="mdn_logo_only_color.png" alt="MDN Logo"&gt;
+                            </p>
+                            <br>
+                            <p><b>CSS</b></p>
+                            <p class="left-indent"><span class="usage">img</span> {<br>
+                                &emsp;width: 150px;<br>
+                                &emsp;height: 100px;<br>
+                                &emsp;border: 1px solid #000;<br>
+                                }<br>
+                                <span class="usage">.narrow</span> {<br>
+                                &emsp;width: 100px;<br>
+                                &emsp;height: 150px;<br>
+                                }<br>
+                                <span class="usage">.contain</span> {<br>
+                                &emsp;object-fit: contain;<br>
+                                }</p>
+                        </td>
+                        <td>
+                            <article class="result">
+                                <h4>object-fit: contain;</h4>
+                                <br>
+                                <img id="mdn" class="contain" src="images/mdn-logo.png" alt="MDN Logo">
+                                <img class="contain narrow" src="images/mdn-logo.png" alt="MDN Logo">
+                            </article>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>object-fit Property on: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"
+                            target="_blank" title="Object-fit Property on MDN Web Docs">MDN</a>.</li>
+                    <li>object-fit Property on: <a href="https://www.w3schools.com/cssref/css3_pr_object-fit.asp"
+                            target="_blank" title="Object-fit Property on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+
+            <hr class="css-hr">
+
+            <section>
+                <h2><span class="css-prop">background-clip</span></h2>
+                <p>The <code>background-clip</code> property defines how far the background (color or image) should
+                    extend within an element.</p>
+                <h3>CSS Syntax:</h3>
+                <p><code>background-clip: border-box|padding-box|content-box|text;</code></p>
+                <h3>Property Values:</h3>
+                <p class="left-indent"><span class="values">border-box</span><br>The background extends to the outside
+                    edge of the border (but underneath the border in z-ordering).</p>
+                <p class="left-indent"><span class="values">padding-box</span><br>The background extends to the outside
+                    edge of the padding. No background is drawn beneath the border.</p>
+                <p class="left-indent"><span class="values">content-box</span><br>The background is painted within
+                    (clipped to) the content box.</p>
+                <p class="left-indent"><span class="values">text</span><br>The background is painted within (clipped to)
+                    the foreground text.</p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Syntax</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>HTML</b></p>
+                            <p class="left-indent">
+                                &lt;<span class="usage">p</span> class="<span class="values">padding-box</span>"&gt;The
+                                background is clipped to the
+                                foreground text.&lt;/<span class="usage">p</span>&gt;
+                            </p>
+                            <br>
+                            <p><b>CSS</b></p>
+                            <p class="left-indent"><span class="usage">p</span> {<br>
+                                &emsp;border: 12px dotted #343434;<br>
+                                &emsp;padding: 15px;<br>
+                                &emsp;width: 85%;<br>
+                                &emsp;margin: auto;<br>
+                                &emsp;background: lightblue;<br>
+                                &emsp;background-clip: padding-box;<br>
+                                }</p>
+                        </td>
+                        <td>
+                            <article class="result">
+                                <h4>background-clip: padding-box;</h4>
+                                <br>
+                                <p class="padding-box">The background extends to the inside edge of the border.
+                                </p>
+                            </article>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>background-clip Property on: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip" target="_blank"
+                            title="Background-clip Property on MDN Web Docs">MDN</a>.</li>
+                    <li>background-clip Property on: <a
+                            href="https://www.w3schools.com/cssref/css3_pr_background-clip.asp" target="_blank"
+                            title="Background-clip Property on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+
+            <hr class="css-hr">
+
+            <section>
+                <h2><span class="css-prop">&lt;letter-spacing&gt;</span></h2>
+                <p>The <code>letter-spacing</code> CSS property sets the horizontal spacing behavior between text
+                    characters. This value is added to the natural spacing between characters while rendering the text.
+                    Positive values of <code>letter-spacing</code> causes characters to spread farther apart, while
+                    negative values of <code>letter-spacing</code> bring characters closer together.</p>
+                <h3>CSS Syntax:</h3>
+                <p><code>letter-spacing: normal|length|initial|inherit;</code></p>
+                <h3>Property Values:</h3>
+                <p class="left-indent"><span class="values">normal</span><br>The normal letter spacing for the current
+                    font. It allows the <a href="https://developer.mozilla.org/en-US/docs/Glossary/User_agent"
+                        target="_blank" title="User Agent on MDN Web Docs">user agent</a> to alter the space between
+                    characters in order to justify text.</p>
+                <p class="left-indent"><span class="values">&lt;length&gt;</span><br>Specifies extra inter-character
+                    space in addition to the default space between characters. Values may be negative, but there may be
+                    implementation-specific limits. User agents may not further increase or decrease the inter-character
+                    space in order to justify text.</p>
+                <br>
+                <table>
+                    <tr>
+                        <th>Syntax</th>
+                        <th>Result</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><b>HTML</b></p>
+                            <p class="left-indent">
+                                &lt;<span class="usage">p</span> class="<span class="values">normal</span>"&gt;letter
+                                spacing&lt;/<span class="usage">p</span>&gt;<br>
+                                &lt;<span class="usage">p</span> class="<span class="values">em-wide</span>"&gt;letter
+                                spacing&lt;/<span class="usage">p</span>&gt;<br>
+                                &lt;<span class="usage">p</span> class="<span class="values">em-wider</span>"&gt;letter
+                                spacing&lt;/<span class="usage">p</span>&gt;<br>
+                                &lt;<span class="usage">p</span> class="<span class="values">em-tight</span>"&gt;letter
+                                spacing&lt;/<span class="usage">p</span>&gt;<br>
+                                &lt;<span class="usage">p</span> class="<span class="values">px-wide</span>"&gt;letter
+                                spacing&lt;/<span class="usage">p</span>&gt;<br>
+                            </p>
+                            <br>
+                            <p><b>CSS</b></p>
+                            <p class="left-indent"><span class="usage">.normal</span> {<br>
+                                &emsp;letter-spacing: normal;<br>
+                                }</p>
+                            <p class="left-indent"><span class="usage">.em-wide</span> {<br>
+                                &emsp;letter-spacing: 0.4em;<br>
+                                }</p>
+                            <p class="left-indent"><span class="usage">.em-wider</span> {<br>
+                                &emsp;letter-spacing: 1em;<br>
+                                }</p>
+                            <p class="left-indent"><span class="usage">.em-tight</span> {<br>
+                                &emsp;letter-spacing: -0.05em;<br>
+                                }</p>
+                            <p class="left-indent"><span class="usage">.px-wide</span> {<br>
+                                &emsp;letter-spacing: 6px;<br>
+                                }</p>
+                        </td>
+                        <td>
+                            <article class="result">
+                                <h4>letter-spacing: &lt;length&gt;;</h4>
+                                <br>
+                                <!-- CSS inline styling -->
+                                <div style="background-color: lightblue; padding: 1em 0;">
+                                    <p class="normal">letter spacing</p>
+                                    <p class="em-wide">letter spacing</p>
+                                    <p class="em-wider">letter spacing</p>
+                                    <p class="em-tight">letter spacing</p>
+                                    <p class="px-wide">letter spacing</p>
+                                </div>
+                            </article>
+                        </td>
+                    </tr>
+                </table>
+                <h3>Sources:</h3>
+                <ul>
+                    <li>letter-spacing Property on: <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing" target="_blank"
+                            title="Letter-spacing Property on MDN Web Docs">MDN</a>.</li>
+                    <li>letter-spacing Property on: <a
+                            href="https://www.w3schools.com/cssref/pr_text_letter-spacing.asp" target="_blank"
+                            title="Letter-spacing Property on W3Schools">W3Schools</a>.</li>
+                </ul>
+            </section>
+            <br>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-credit">
+                <!-- using inline CSS styling - assignment03 -->
+                <p style="text-align: center;">&copy; 2022 Mahmoud Ektefaie | COMP1850
+                    <span class="social-icons">
+                        <a href="https://www.facebook.com/ektefaie" target="_blank"
+                            title="Mahmoud Ektefaie's Facebook Page"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/mahmoud13059754" target="_blank"
+                            title="Mahmoud Ektefaie's Twitter Page"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/mahmoud-ektefaie-21755870/" target="_blank"
+                            title="Mahmoud Ektefaie's LinkedIn Page"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mektefaie" target="_blank" title="Mahmoud Ektefaie's GitHub Page"><i
+                                class="fa-brands fa-github"></i></a>
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
