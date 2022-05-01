@@ -18,7 +18,6 @@ html {
 }
 
 body {
-  /* background-color: #e3e3e3; */
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
@@ -104,11 +103,11 @@ th:last-child {
 }
 
 td:first-child {
-  background-color: rgb(244, 252, 255);
+  background-color: #f4fcff;
 }
 
 td:last-child {
-  background-color: rgba(255, 255, 241, 0.801);
+  background-color: #fffff1cc;
 }
 
 .container {
